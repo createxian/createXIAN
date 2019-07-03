@@ -1,0 +1,35 @@
+<view class='thisPage'>
+  <!--轮播图-->
+  <view class='roatationChart'>
+    <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='{{circular}}'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" width="748.8rpx" height="195.6864rpx"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--搜索框-->
+  <view class='inputSearch'>
+    <input placeholder='请输入查询内容'></input>
+  </view>
+  <!--很像app图标的连接-->
+  <view class='app'>
+    <view wx:for="{{apps}}"></view>
+  </view>
+  <!--最新动态-->
+  <view class='activity'>
+    <view class='head'>
+      <text>最新动态</text>
+    </view>
+    <view class='contain'>
+      <view></view>
+      <view></view>
+      <view></view>
+      <view></view>
+      <view></view>
+      <view></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,60 @@
+.thisPage{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width:748.8rpx;
+  overflow: scroll;
+}
+.roatationChart{ /*轮播图*/
+  width:748.8rpx;
+  height:195.6864rpx;  /* */
+  border-bottom:solid #8a8a8a 1rpx;
+}
+.inputSearch{
+  display: flex;
+  justify-content: center;
+  width:748.8rpx;
+  height:78.374rpx;
+  margin:34rpx 0 0 0;
+}
+input{
+  width:586.995rpx;
+  height:68.374rpx;
+  border-radius: 20rpx;
+  border: solid #888 0.1rpx;
+  box-shadow: 5.7rpx -5.7rpx 5rpx #777777;
+  font-size: 30rpx;
+  padding:0 0 0 40rpx;
+}
+.app{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height:259.5839rpx;
+}
+.activity{
+
+}
+.head{
+  border-bottom: solid #8a8a8a 1rpx;
+  border-top:solid #8a8a8a 1rpx;
+  height:81.868rpx;
+}
+.head text{
+  position: relative;
+  left:20rpx;
+  border-left: solid #C90016 8rpx;
+  line-height: 81.868rpx;
+  padding: 0 0 0 15rpx;
+}
+.contain{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width:748.8rpx;
+}
+.contain view{
+  height:187.6992rpx;
+  border-bottom: solid #8a8a8a 1rpx;
+}

@@ -1,0 +1,10 @@
+<view class='container0'>
+  <view class='container1'>
+    <view class='getMessage'>
+      <text>收到的留言</text>
+    </view>
+    <view class='myDynamic'>
+      <text>我的动态</text>
+    </view>
+  </view>
+</view>

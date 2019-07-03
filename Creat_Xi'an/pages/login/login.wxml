@@ -1,0 +1,20 @@
+<view class='container0'>
+  <view calss='container1'>
+    <!--输入账号和密码-->
+    <form bindsubmit='Request_Login'>
+      <view class='inputContainer0'>
+        <text>账号</text>
+        <input value='{{account_value}}' name='account'></input>
+      </view>
+      <view class='inputContainer1'>
+        <text>密码</text>
+        <input password='true' value='{{password_value}}' name='password'></input> 
+      </view>
+      <view>
+      <button form-type='submit'>登陆</button>
+    </view>
+    </form>
+    <!--点击登陆-->
+    
+  </view>
+</view> 

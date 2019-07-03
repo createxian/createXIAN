@@ -1,0 +1,33 @@
+.container0{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height:1000rpx;
+}
+.container1{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  margin-bottom:20rpx;
+  width:748.8rpx;
+  height:78rpx;
+}
+.getMessage{
+  display: flex;
+  justify-content: center;
+  margin:0 10rpx 0 5rpx;
+  border-bottom: solid #8a8a8a 1rpx;
+  width:374.4rpx;
+  height:72.54rpx;
+  line-height:72.54rpx;
+}
+.myDynamic{
+  display: flex;
+  justify-content: center;
+  margin:0 10rpx 0 5rpx;
+  width:374.4rpx;
+  height:72.54rpx;
+  border-bottom: solid #8a8a8a 1rpx;
+  line-height: 72.54rpx;
+}
