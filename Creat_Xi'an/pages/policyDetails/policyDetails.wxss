@@ -1,0 +1,26 @@
+/* pages/policyDetails/policyDetails.wxss */
+.container{
+  padding: 20rpx !important;
+  display: block;
+}
+.top-detail{
+  font-size: 34rpx;
+}
+.title-txt{
+  font-weight: bold;
+  margin-right: 15rpx;
+}
+.title>a{
+  color: rgb(64, 112, 175);
+}
+.file-img{
+  height: 36rpx;
+  width: 36rpx;
+  position: relative;
+  top: 6rpx;
+  margin-right: 5rpx;
+}
+.file-download{
+  margin-left: 8rpx;
+  color: rgb(64, 112, 175);
+}

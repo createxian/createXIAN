@@ -3,7 +3,9 @@
     "pages/home/home",
     "pages/login/login",
     "pages/index/index",
-    "pages/mySpace/mySpace"
+    "pages/mySpace/mySpace",
+	"pages/policy/policy",
+	"pages/policyDetails/policyDetails"
   ],
   "window": {
     "backgroundTextStyle": "light",

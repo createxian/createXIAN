@@ -1,0 +1,54 @@
+<!--pages/policy/policy.wxml-->
+<view class='container'>
+  <image src='../../images/policy/banner.jpg' class='banner-img'></image>
+  <view class='search'>
+    <input class='search-input' max-length='50' placeholder='请输入查询内容' bindinput='handleSearchInput' placeholder-class='search-ph' confirm-type='search' bindconfirm='handleSearchConfirm'></input>
+    <image src='../../images/policy/search1.png' class='search-icon'></image>
+  </view>
+
+  <view class='labels'>
+    <scroll-view scroll-x='true' style="height:92rpx;white-space:nowrap">
+      <view class='label-wrapper'>
+        <view class='label-item all-label'>全部</view>
+        <view class='label-item'>国家级</view>
+        <view class='label-item'>省级</view>
+        <view class='label-item'>局级</view>
+      </view>
+    </scroll-view>
+    <scroll-view scroll-x='true' style="height:92rpx;white-space:nowrap">
+      <view class='label-wrapper'>
+        <view class='label-item all-label'>全部</view>
+        <view class='label-item'>科技体制改革与创新</view>
+        <view class='label-item'>知识产权与奖励</view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class='list-wrapper'>
+    <view class='list-item' bindtap='handleSeeDetails'>
+      <view class='item-title'>《西安市科技小巨人企业认定补助办法》</view>
+      <view class='item-detail'>发文机关：西安市科技局</view>
+      <view class='item-detail'>成文时间：2019-02-21</view>
+    </view>
+    <view class='list-item'>
+      <view class='item-title'>《西安市科技小巨人企业认定补助办法》</view>
+      <view class='item-detail'>发文机关：西安市科技局</view>
+      <view class='item-detail'>成文时间：2019-02-21</view>
+    </view>
+    <view class='list-item'>
+      <view class='item-title'>《西安市科技小巨人企业认定补助办法》</view>
+      <view class='item-detail'>发文机关：西安市科技局</view>
+      <view class='item-detail'>成文时间：2019-02-21</view>
+    </view>
+    <view class='list-item'>
+      <view class='item-title'>《西安市科技小巨人企业认定补助办法》</view>
+      <view class='item-detail'>发文机关：西安市科技局</view>
+      <view class='item-detail'>成文时间：2019-02-21</view>
+    </view>
+    <view class='list-item'>
+      <view class='item-title'>《西安市科技小巨人企业认定补助办法》</view>
+      <view class='item-detail'>发文机关：西安市科技局</view>
+      <view class='item-detail'>成文时间：2019-02-21</view>
+    </view>
+  </view>
+</view>
