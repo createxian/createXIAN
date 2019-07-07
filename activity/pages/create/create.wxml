@@ -1,0 +1,148 @@
+<view class="container">
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <!--view class="label">添加照片</view>
+
+  <view class="images-container">
+      <view id="addImageButton" class="image-add" bindtap="chooseImage"></view>
+  </view-->
+
+  <view class="weui-cell weui-cell_input">
+    <!--view class="weui-cell__hd" style="width:160rpx;">
+      <view class="weui-label" style="width:160rpx;">选择图片</view>
+    </view-->
+    <view class="weui-cell__bd">
+      <view class="overflow-inherit">
+        <view class="weui-uploader__input-box">
+          <view class="weui-uploader__input" bindtap="chooseImage"></view>
+        </view>
+        <view class="weui-uploader__files overflow-inherit">
+          <block wx:for="{{imageList}}" wx:for-item="image">
+            <view class="weui-uploader__file">
+              <image class="weui-uploader__img" style="width:137px;height:77px;" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">活动名称</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input text-right" placeholder="请输入活动名称" bindinput="input" maxlength="10" />
+    </view>
+  </view>
+
+  <!--view class='address' bindtap='onChangeAddress'>
+    <input class='choose-address' placeholder='请选取地点' value='{{chooseAddress}}'></input>
+  </view-->
+
+  <view class="weui-cell weui-cell_access padding-030">
+    <view class="weui-cell__bd">地点</view>
+    <view class="weui-cell__bd">
+      <input class="weui-input text-right" placeholder="请选取地点" value="{{chooseAddress}}" />
+    </view>
+    <view class="weui-cell__ft weui-cell__ft_in-access margin-left-10" bindtap="onChangeAddress"></view>
+  </view>
+
+  <!--view class="menu-item">
+    <picker mode="date" value="{{startDate}}" start="" end="" bindchange="bindStartTimeChange">
+      <view class="picker">
+        <view class="menu-text">
+          <text class="vm">开始时间</text>
+          <view class="hide"><input value="{{startDate}}" disabled="true" name="startDate"></input></view> 
+        </view>  
+      </view>
+    </picker>
+  </view>
+
+  <view class="menu-item">
+    <picker mode="date" value="{{endDate}}" start="" end="" bindchange="bindEndTimeChange">
+      <view class="picker">
+        <view class="menu-text">
+          <text class="vm">结束时间</text>
+          <view class="hide"><input value="{{endDate}}" disabled="true" name="endDate"></input></view>  
+        </view>                
+      </view>
+    </picker>
+  </view--> 
+
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd weui-cell__hd_in-select-after">
+      <view class="weui-label">开始时间</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="date" value="{{startDate}}" start="" end="" bindchange="bindStartTimeChange" class="display-inline-block width-300 ">
+        <view class="weui-select weui-select_in-select-after border-right-0 text-right">{{startDate}}</view>
+      </picker>
+    </view>
+  </view>
+
+
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd weui-cell__hd_in-select-after">
+      <view class="weui-label">结束时间</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="date" value="{{endDate}}" start="" end="" bindchange="bindEndTimeChange" class="display-inline-block width-300 ">
+        <view class="weui-select weui-select_in-select-after border-right-0 text-right">{{endDate}}</view>
+      </picker>
+    </view>
+  </view>       
+  
+
+  <!--view class="menu">
+      <view class="menu-item">
+          <view class="menu-text">
+              <text class="vm">主办方</text>
+          </view>
+          <view class="m-t-5">
+              <textarea value="{{text}}" placeholder="主办方"></textarea>
+          </view>
+      </view>            
+  </view-->
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">主办方</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input text-right" placeholder="请输入主办方名称" bindinput="input" />
+    </view>
+  </view>
+
+
+
+  <!--view class="menu">
+      <view class="menu-item">
+          <view class="menu-text">
+              <text class="vm">活动描述</text>
+          </view>
+          <view class="m-t-5">
+              <textarea value="{{text}}" placeholder="说些什么吧"></textarea>
+          </view>
+      </view>            
+  </view-->
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">活动描述</view>
+    </view>
+    <view class="weui-cell__bd">
+      <!--input class="weui-input" placeholder="请输入活动描述" bindinput="input"/-->
+      <!--textarea class="weui-input text-right width-400" placeholder="请输入活动描述" bindinput="input"auto-height /-->
+      <textarea value="{{text}}" placeholder="说些什么吧"></textarea>
+    </view>
+  </view>
+  
+  <button class='Scancode' bindtap='postActivity'>预览</button>
+
+
+</form>
+</view>
+
+    
+                    

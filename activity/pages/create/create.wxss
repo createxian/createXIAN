@@ -1,0 +1,21 @@
+.image-add {
+    box-sizing: border-box;
+    width: 690rpx;
+    height: 100rpx;
+    margin: 10rpx 10rpx 10rpx 10rpx;
+    border: solid 2rpx #999;
+    border-radius: 10rpx;
+    box-shadow: 0 0 2rpx #888888;
+
+}
+
+.Scancode {
+  
+  font-size: 39rpx;
+  background:#FF8C00;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

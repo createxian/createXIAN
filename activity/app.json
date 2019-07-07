@@ -1,0 +1,16 @@
+{
+  "pages": [
+    
+    "pages/posts/post",
+    "pages/create/create",
+    "pages/posts/post-detail/post-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#DC143C",
+    "navigationBarTitleText": "活动",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

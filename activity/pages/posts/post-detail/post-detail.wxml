@@ -1,0 +1,23 @@
+<view class="container">
+  <image class="head-image" src="{{postData.headImgSrc}}"></image>
+
+  <text class="title">{{postData.title}}</text>
+
+  <text class="detail">活动地点 {{postData.address}}</text>
+
+  
+  <text class="date">开始时间 {{postData.startTime}}</text>
+
+
+  <text class="date">结束时间 {{postData.endTime}}</text>
+
+
+  <text class="detail">主办方 {{postData.host}}</text>
+
+
+  <text class="detail">{{postData.detail}}</text>
+
+  
+
+</view>
+

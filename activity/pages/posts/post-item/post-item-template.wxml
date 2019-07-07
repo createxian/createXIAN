@@ -1,0 +1,10 @@
+<template name="postItem">
+    <view class="post-container">
+      <image class="post-image" src="{{imgSrc}}"></image>
+      <text class="post-title">{{title}}</text>
+      <view class="post-author-date">
+            <text class="post-date">{{date}}</text>
+      </view>
+    </view>
+    <button class='Scancode' bindtap='addActivity'>添加活动</button>
+</template>
