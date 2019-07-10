@@ -1,3 +1,4 @@
+
 var local_database = [
     {
         date: "Sep 18 2019",
@@ -53,3 +54,62 @@ var local_database = [
 module.exports = {
     postList: local_database
 }
+
+/*Page({
+
+  /**
+   * 页面的初始数据
+   
+  data: {
+    
+  },
+  getdata: function () {
+    var that = this;
+    wx.request({
+      url: '',
+      data:{
+        activityId : that.data.activityId,
+        activityTime : that.data.activityTime,
+        activityTitle : that.data.activityTitle,
+        activityContent : that.data.activityContent,
+        publishTime : that.data.publishTime,
+        beginningTime : that.data.beginningTime,
+        endingTime : that.data.endingTime,
+        sponsor : that.data.sponsor,
+        msg : that.data.msg 
+      },
+      method: 'GET',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)//打印到控制台
+
+        var activityId = res.data.activityId;
+        var activityTime = res.data.activityTime;
+        var activityTitle = res.data.activityTitle;
+        var activityContent = res.data.activityContent;
+        var publishTime = res.data.publishTime;
+        var beginningTime = res.data.beginningTime;
+        var endingTime = res.data.endingTime;
+        var sponsor = res.data.sponsor;
+        var msg = res.data.msg;
+
+        if ( msg == null ) {
+          var toastText = '数据获取失败';
+          wx.showToast({
+            title: toastText,
+            icon: '',
+            duration: 2000
+          });
+        } else {
+          that.setData({
+            
+          })
+        }
+      }
+    })
+  }
+
+  
+})*/

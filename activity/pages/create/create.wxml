@@ -138,7 +138,11 @@
     </view>
   </view>
   
-  <button class='Scancode' bindtap='postActivity'>预览</button>
+  <!--button class='Scancode' bindtap='postActivity'>预览</button-->
+
+  <!--button class="button" type="primary" formType="submit">确认发布</button-->
+
+  <button class='Scancode' type="primary" formType="submit">预览</button>
 
 
 </form>
