@@ -1,18 +1,22 @@
 <!--pages/policyDetails/policyDetails.wxml-->
-<view class='container'>
+<view id='container'>
   <view class='top-detail'>
     <view class='title'>
-      标题：<text class='title-txt'>西安市科学小巨人企业认定补助办法</text>
-      <a href='#'>访问原网址</a>
+      标题：<text class='title-txt'>{{title}}</text>
+      <a href='{{originalUrl}}'>访问原网址</a>
     </view>
-    <view class='level'>级别：市级</view>
-    <view class=''>发文单位：西安市科技局</view>
-    <view class='catg'>类别：科技体制改革与创新</view>
-    <view class='time'>发布日期：2019-02-21</view>
-    <view class='file'>
+    <view class='level'>级别：{{level}}</view>
+    <view class=''>发文单位：{{institution}}</view>
+    <view class='catg'>类别：{{catg}}</view>
+    <view class='time'>发布时间：{{time}}</view>
+    <view class='file' wx:if='{{fileUrl}}'>
       <image src='../../images/policy/doc.png' class='file-img'></image>
-      <text>西安市科学小巨人企业认定补助办法.docx</text>
+      <text>{{title}}.docx</text>
       <text class='file-download'>下载附件</text>
+    </view>
+    <view class='content'>
+      <text class='content-title'>政策内容：</text>
+      <view>{{content}}</view>
     </view>
   </view>
 </view>

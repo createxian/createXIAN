@@ -1,8 +1,6 @@
 /* pages/policy/policy.wxss */
-.container{
-  padding: 0;
+#container{
   padding-bottom: 25rpx;
-  display: block;
 }
 .banner-img{
   width: 100%;
@@ -51,7 +49,7 @@ label-wrapper{
   letter-spacing: 2rpx;
   border-radius: 30rpx;
 }
-.all-label{
+.selected{
   background: rgb(252, 95, 81) !important;
   color: #fff !important;
 }
@@ -90,4 +88,27 @@ label-wrapper{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.load-more{
+  width: 100%;
+  padding-top: 20rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #555;
+}
+.emptyImg{
+  position: absolute;
+  width: 130rpx;
+  height: 115rpx;
+  left: 50%;
+  margin-left: -63rpx;
+  margin-top: 180rpx;
+}
+.emptyTxt{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+  margin-top: 310rpx;
+  letter-spacing: 2rpx;
 }

@@ -5,14 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    fileUrl: '',
+    level: '',
+    institution: '',
+    originalUrl: '',
+    title: '',
+    content: '',
+    id: '',
+    time: '',
+    catg: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let self = this;
+    let id = options.id;
+    wx.request({
+      url: 'https://cxa.wizzstudio.com/policy/detail/'+id,
+      method: 'GET',
+      success: res => {
+        console.log(res);
+        let data = res.data.data;
+        self.setData({
+          fileUrl: data.fileUrl,
+          originalUrl: data.originalUrl,
+          institution: data.publishInstitution,
+          catg: data.classify,
+          title: data.poicyTitle,
+          content: data.policyContent,
+          id: data.policyId,
+          time: data.publishTime,
+          level: data.level
+        })
+      }
+    })
   },
 
   /**

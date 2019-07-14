@@ -1,7 +1,6 @@
 /* pages/policyDetails/policyDetails.wxss */
-.container{
-  padding: 20rpx !important;
-  display: block;
+#container{
+  padding: 20rpx;
 }
 .top-detail{
   font-size: 34rpx;
@@ -23,4 +22,8 @@
 .file-download{
   margin-left: 8rpx;
   color: rgb(64, 112, 175);
+}
+.content-title{
+  font-weight: bold;
+  margin-bottom: 20rpx;
 }
